@@ -39,7 +39,7 @@ def get_class_name(cls_id):
 # ─────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.title("⚙️ Pengaturan Deteksi")
+    st.title("Pengaturan Deteksi")
     st.markdown("---")
 
     conf_threshold = st.slider(
@@ -61,7 +61,7 @@ with st.sidebar:
     )
 
     st.markdown("---")
-    st.markdown("### 📋 Info Model")
+    st.markdown("### Info Model")
     st.write("**Kelas yang dikenali:**")
     for idx in model.names:
         st.write(f"- `{idx}`: {get_class_name(idx)}")
